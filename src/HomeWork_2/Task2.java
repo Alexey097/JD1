@@ -1,31 +1,22 @@
 package HomeWork_2;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.Random;
 
 public class Task2 {
     public static void main(String[] args) {
-        //Вводим число, числа которого нужно сложить
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите число");
-        int chislo = in.nextInt();
-        //Задаю переменные куда буду помещать числа в зависимости от того четное оно или нет
-        int odd = 0;
-        int even = 0;
-        //В цикле отделяю справа налево числа и проверяю в каждой итерации четное число или нечетное
-        while (chislo > 0) {
-            int partNumber = chislo % 10;
-            if (partNumber % 2 == 0) {
-                //Если четное - число прибавляю в переменную четных
-                odd += partNumber;
-            } else {
-                //Если нечетное - число прибавляю в переменную нечетных
-                even += partNumber;
+        int povtor = 0;
+        int countOfOdds = 0;
+
+        while (povtor<10000) {
+            Random rnd = new Random();
+            int chislo = rnd.nextInt(10000);
+            if (chislo%2==0){
+                countOfOdds++;
             }
-            chislo /= 10;
+            povtor++;
+
         }
-        //Вывожу суммы в консоль
-        System.out.println("Сумма четных цифр в числе равна "+odd);
-        System.out.println("Сумма нечетных цифр в числе равна "+even);
+        float a = (float) countOfOdds/100;
+        System.out.println("Шанс получения четного числа из 10000 псевдорандомных чисел равен "+a+"%");
     }
 }
