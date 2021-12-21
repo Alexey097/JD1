@@ -1,7 +1,4 @@
-package HomeWork_2;
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
+package HomeWork_FromPresentation;
 
 public class Task7 {
     public static void main(String[] args) {

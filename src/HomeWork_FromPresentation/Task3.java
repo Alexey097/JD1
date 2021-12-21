@@ -1,6 +1,5 @@
-package HomeWork_2;
+package HomeWork_FromPresentation;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task3 {

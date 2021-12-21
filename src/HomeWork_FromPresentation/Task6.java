@@ -1,4 +1,4 @@
-package HomeWork_2;
+package HomeWork_FromPresentation;
 
 import java.util.Scanner;
 

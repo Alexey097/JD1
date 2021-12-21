@@ -1,4 +1,4 @@
-package HomeWork_2;
+package HomeWork_FromPresentation;
 
 public class Task9 {
     public static void main(String[] args) {
