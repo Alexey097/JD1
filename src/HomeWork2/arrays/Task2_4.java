@@ -2,9 +2,11 @@ package HomeWork2.arrays;
 
 import HomeWork2.utils.ArraysUtilsTask2_1;
 
+import java.util.Arrays;
+
 public class Task2_4 {
     public static void main(String[] args) {
-        twoFourSix246();
+        twoFourFive245();
     }
 
     public static void twoFourOne241() {
@@ -66,6 +68,15 @@ public class Task2_4 {
 
     public static void twoFourFive245() {
         int[] array = ArraysUtilsTask2_1.arrayRandom(5, 99);
+        int x = 2;                                              // 2.4.5
+        int[] stringArray = array;
+        for(int i = 0; i < x; i++) {
+            for (int j = x; j < stringArray.length - 1; j++) {
+                stringArray[j] = stringArray[j + 1];
+            }
+            stringArray[stringArray.length - i - 1] = 0;
+        }
+        System.out.println(Arrays.toString(stringArray));
     }
     public static void twoFourSix246() {
         int[] array = ArraysUtilsTask2_1.arrayRandom(5, 199);
