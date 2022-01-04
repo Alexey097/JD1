@@ -1,6 +1,6 @@
-package HomeWork2.arrays;
+package HomeWork_2.arrays;
 
-import HomeWork2.utils.ArraysUtilsTask2_1;
+import HomeWork_2.utils.ArraysUtilsTask2_1;
 
 import java.util.Arrays;
 
